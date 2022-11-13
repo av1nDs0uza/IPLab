@@ -1,0 +1,123 @@
+<DOCTYPE html>
+<html>
+
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #0066CC;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+form{
+margin-left:150px;
+margin-right:150px;
+margin-bottom:40px;
+margin-top:40px;
+background-color: #FFF2F2;
+padding:20px;
+}
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+body{
+
+background-image: url("/home/dbit/Downloads/bg.png");
+}
+</style>
+
+
+<HEAD>
+<title>Attendance form</title>
+</head>
+	<body>
+
+		<form id="form" onsubmit="return validateForm()" action="hi.html">
+
+		
+			<h1 >Attendance Form</h1>
+			<!-- Name -->
+			<label for="name">Enter Student name:</label>
+			<input type="text" name="name" id="name" placeholder="Name" required>
+			<br><br>
+			<!-- Roll no -->
+			<label for="rn">Enter Roll no:</label>
+			<input type="text" name="rn" id="rn" placeholder="Roll No" required>
+			<br><br>
+			<!-- Email -->
+			<label for="email">Enter email:</label>
+			<input type="email" name="email" id="email" placeholder="Email" required>
+			<br><br>
+			<!-- Branch -->
+			<label for="branch">Enter Your Branch:</label>
+			<select name="branch" id="branch">
+				<option value="COMPS">COMPS</option>
+				<option value="IT">IT</option>
+				<option value="EXTC">EXTC</option>
+				<option value="MECH">MECH</option>
+				</select>
+			<br><br>
+
+			<!-- Year -->
+			<label for="year">Year</label>
+			<input type="radio" name="year" id="FE" value="F" required> <label for="FE">FE</label>
+			<input type="radio" name="year" id="SE" value="S" required> <label for="SE">SE</label>
+			<input type="radio" name="year" id="TE" value="T" required> <label for="TE">TE</label>
+			<br><br>
+
+			<!-- date -->
+			<label for="date">Enter Date:</label>
+			<input type="date" name="date" id="date" required>
+			<br><br>
+
+
+			<!-- Submit -->
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+
+	<script>
+		// Validate form
+		function validateForm() {
+			var form = document.getElementById('form');
+			if (form.name == "" || 
+				form.email == "" ||  
+				form.branch == "" || 
+				form.year == "") {
+				alert("You must fill all the fields");
+				return false;
+	
+
+			
+		}
+	</script>
+
+</html>

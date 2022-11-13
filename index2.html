@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        Attendance form for 8th nov'22 - DBIT
+    </title>
+
+    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+ 
+    <style>
+
+        body {
+            background-color:azure;
+        }
+ 
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+ 
+        h1 {
+            text-align: center;
+            margin-top: 25px;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+ 
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            /* box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5); */
+        }
+ 
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+
+    </style>
+</head>
+  
+<body>
+    <h1>Attendance for IP Pracs - 08/11/22</h1>
+  
+    <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label class="form-label" for="name" id="label-name">
+                Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   class="form-control"
+                   placeholder="Enter your name" />
+        </div>
+  
+        <div class="form-control">
+            <label class="form-label" for="name" id="label-name">
+                Email
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="email"
+                   id="name"
+                   class="form-control"
+                   placeholder="Enter your Email" />
+        </div>
+        <div class="form-control">
+            <label for="branch" id="label-branch">
+                Choose your branch
+            </label>
+             
+            <!-- Dropdown options -->
+            <select class="form-select" name="branch" id="branch">
+                <option value="IT">IT</option>
+                <option value="Comps">Comps</option>
+                <option value="Mech">
+                    Mech
+                </option>
+                <option value="Extc">
+                    Extc
+                </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="year" id="label-year">
+                Year
+            </label>
+             
+            <!-- Dropdown options -->
+            <select class="form-select" name="year" id="year">
+                <option value="FE">First Year</option>
+                <option value="SEs">Second Year</option>
+                <option value="Te">
+                    Third Year
+                </option>
+                <option value="BE">
+                    Fourth Year
+                </option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label class="form-label" for="age" id="label-age">
+                Branch
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   class="form-control"
+                   placeholder="Enter your age" />
+        </div>
+  
+    
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button class="btn btn-primary" type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+  
+</html>
